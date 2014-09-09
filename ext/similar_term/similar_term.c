@@ -35,10 +35,8 @@ static VALUE
 load(VALUE self, VALUE file_name)
 {
   FILE *fp;
-  char *bestw[N];
-  char st[100][max_size];
   float len;
-  long long a, b, c, d, cn, bi[100];
+  long long a, b;
   char ch;
 
   fp = fopen(StringValuePtr(file_name), "rb");
